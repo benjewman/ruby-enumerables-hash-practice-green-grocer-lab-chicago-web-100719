@@ -51,9 +51,9 @@ total = 0
     total += (hash[:price] * hash[:count])
   end
   if total > 100
-    total = (total * 0.9).round(2)
+    (total * 0.9).round(2)
   else
-    total = total.round(2)
+    total.round(2)
   end
   return total 
 end
